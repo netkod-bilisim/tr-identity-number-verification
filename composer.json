@@ -1,0 +1,36 @@
+{
+  "name": "netkod-bilisim/tr-identity-number-verification",
+  "description": "It checks the TR Identity Number.",
+  "keywords": [
+    "tr",
+    "identity",
+    "number",
+    "verification",
+    "check",
+    "validate",
+    "validate tr identity number",
+    "validate tr identity number with php",
+    "validate tr identity number with laravel"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Remzi DALYAN",
+      "email": "remzi.dalyan@netkodbilisim.com",
+      "role": "Software Engineer"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-soap": "*",
+    "netkod-bilisim/tr-identity-number-validation": "^1",
+    "netkod-bilisim/tr-string": "^1"
+  },
+  "autoload": {
+    "files": [
+      "./src/TrIdentityNumberVerification.php"
+    ]
+  },
+  "minimum-stability": "dev"
+}
