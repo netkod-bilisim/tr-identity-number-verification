@@ -9,7 +9,7 @@ class TrIdentityNumberVerification
 
     public static function verify(int $citizen_number, int $birth_year, string $name, string $surname): bool
     {
-        if (!TrIdentityNumberValidation::validate($citizen_number)) {
+        if (! TrIdentityNumberValidation::validate($citizen_number)) {
             return false;
         }
 
@@ -25,7 +25,7 @@ class TrIdentityNumberVerification
             'TCKimlikNo' => $citizen_number,
             'Ad' => tr_strtoupper($name),
             'Soyad' => tr_strtoupper($surname),
-            'DogumYili' => $birth_year
+            'DogumYili' => $birth_year,
         ]);
 
         return $response->TCKimlikNoDogrulaResult;
